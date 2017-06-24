@@ -20,10 +20,19 @@
                 <label>Room name</label>
                 <input type="text" name="room" />
             </div>
+            <div class="form-field" id="form-field__rooms">
+                <label>Or select an active room</label>
+                <select id="form-field__select">
+                    <option disabled selected>Select an room...</option>
+                </select>
+            </div>
             <div class="form-field">
                 <button>Join</button>
             </div>
             </form>
         </div>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="/js/libs/jquery-3.2.1.min.js"></script>
+        <script src="/js/index.js"></script>
     </body>
 </html>

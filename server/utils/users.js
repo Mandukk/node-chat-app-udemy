@@ -1,10 +1,4 @@
-//addUser(id, name, room);
-
-//removeUser(id);
-
-//getUser(id);
-
-//getUserList(room);
+const _ = require('lodash');
 
 class Users {
     constructor () {
@@ -40,6 +34,11 @@ class Users {
         let namesArray = users.map((user) => user.name);
 
         return namesArray;
+    }
+
+    getRoomsList () {
+        let roomsArray = _.uniq(this.users.map((user) => user.room));
+        return roomsArray;
     }
 
 }

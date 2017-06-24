@@ -70,5 +70,10 @@ describe('Users', () => {
         let userList = users.getUserList('JS');
 
         expect(userList).toEqual(['Carlos']);
+    });
+
+    it('should return all rooms', () => {
+        let rooms = users.getRoomsList();
+        expect(rooms).toEqual(['Node course', 'JS']);
     })
 });
